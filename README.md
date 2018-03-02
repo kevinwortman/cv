@@ -1,2 +1,2 @@
 # cv
-Kevin Wortman's curriculum vitae (CV)
+Kevin A. Wortman's curriculum vitae (CV)
