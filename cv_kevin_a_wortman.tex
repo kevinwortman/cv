@@ -9,6 +9,7 @@
   amssymb, % \checkmark
   enumerate,
   fullpage,
+  ifthen,
   multicol,
   palatino,
   url
@@ -21,6 +22,12 @@
   citecolor=blue,
   anchorcolor=blue]{hyperref}
 
+\newboolean{AllInstitutionsBoolean}
+\setboolean{AllInstitutionsBoolean}{true}
+\newcommand{\IfAllInstitutions}[1]{
+  \ifthenelse{\boolean{AllInstitutionsBoolean}}{#1}{}
+}
+  
 \newcommand{\ck}{\checkmark}
 
 \newcommand{\comment}[1]{}
@@ -54,7 +61,13 @@ Phone: 657-278-2968\\
 
 \heading{Academic Employment}
 
-\textbf{Associate Professor,} Department of Computer Science, CSU Fullerton, 2015 -- present
+\textbf{Professor,} Department of Computer Science, CSU Fullerton, 2022 -- present
+
+\IfAllInstitutions{
+\textbf{Visiting Associate Professor,} MCS Program, Department of Computer Science, UC Irvine, Spring 2020 and Spring 2019
+}
+
+\textbf{Associate Professor,} Department of Computer Science, CSU Fullerton, 2015 -- 2022
 
 \textbf{Assistant Professor,} Department of Computer Science, CSU Fullerton, 2009 -- 2015
 
@@ -210,6 +223,13 @@ Phone: 657-278-2968\\
 \item CPSC 535 Advanced Algorithms: Fall 2019, Spring 2019
 \item CPSC 597 Graduate Project: Fall 2011
 \end{enumerate}
+}
+
+\IfAllInstitutions{
+\textbf{Courses Taught --- UC Irvine}
+\begin{itemize}
+  \item COMPSCI 261P Data Structures: Spring 2020, Spring 2019
+\end{itemize}
 }
 
 \textbf{Courses Developed}
