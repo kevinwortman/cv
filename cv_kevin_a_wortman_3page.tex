@@ -1,0 +1,163 @@
+
+% Last updated September 19, 2021
+
+\documentclass[11pt]{letter}
+
+\long\def\omit#1{\relax}
+
+\usepackage{
+  amssymb, % \checkmark
+  enumerate,
+  fullpage,
+  ifthen,
+  multicol,
+  palatino,
+  url
+}
+
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue,
+  anchorcolor=blue]{hyperref}
+
+\newboolean{AllInstitutionsBoolean}
+\setboolean{AllInstitutionsBoolean}{true}
+\newcommand{\IfAllInstitutions}[1]{
+  \ifthenelse{\boolean{AllInstitutionsBoolean}}{#1}{}
+}
+  
+\newcommand{\ck}{\checkmark}
+
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\newcommand{\heading}[1]{ \vspace{11pt} {\Large #1} \\ \rule{6.5in}{.5pt} }
+
+{\Large Kevin A. Wortman}
+\begin{multicols}{2}
+Department of Computer Science\\
+California State University, Fullerton\\
+800 N. State College Blvd.\\
+Fullerton, CA 92831\\
+
+Email: kwortman@fullerton.edu\\
+Office: CS-536\\
+Phone: 657-278-2968\\
+\end{multicols}
+
+\heading{Education}
+
+\textbf{University of California, Irvine,} Ph.D., Information and Computer Science, 2009 
+
+\textbf{University of California, Irvine,} M.S., Information and Computer Science, 2004 
+
+\textbf{University of Massachusetts, Amherst,} B.S., Computer Science, Mathematics, \emph{cum laude}, 2002
+
+\heading{Academic Posts}
+
+\textbf{Professor,} Department of Computer Science, CSU Fullerton, 2022 -- present
+
+\textbf{Associate Professor,} Department of Computer Science, CSU Fullerton, 2015 -- 2022
+
+\textbf{Assistant Professor,} Department of Computer Science, CSU Fullerton, 2009 -- 2015
+
+\heading{Selected Publications}
+
+\begin{enumerate}
+  \item \label{item:ccwc21palit} Shekhar Palit and K. A. Wortman, \emph{Perfect Tabular Hashing in Pseudolinear Time,} IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC 2021), Las Vegas, Nevada, 2021.
+  \item \label{item:ccwc21smith} K. A. Wortman and Nicholas Smith, \emph{CombinoChord: A Guitar Chord Generator App,} IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC 2021), Las Vegas, Nevada, 2021.
+  \item \label{item:ccwc20} Coleman Nugent and K. A. Wortman, \emph{Crumple Trees,} IEEE 10th Annual Computing and Communication Workshop and Conference (CCWC 2020), Las Vegas, Nevada, 2020.
+  \item \label{item:its14} J.R. Richardson and K. A. Wortman, \emph{Street Scanner Geo-Location,} 21st Intelligent Transport Systems World Congress (IST 2014), Detroit, Michigan, 2014.
+  \item \label{item:isbra13} P. Danaee, K. A. Wortman, S. X. Wang, \emph{Pseudoknotted RNA Secondary Structure Detection Using Artificial Neural Network,} 9th International Symposium on Bioinformatics Research and Applications (ISBRA 2013), Charlotte, North Carolina, 2013.
+  \item \label{item:cccg12} J. M. White and K. A. Wortman, \emph{Divide-and-Conquer 3D Convex Hulls on the GPU,} 24th Canadian Conference on Computational Geometry (CCCG 2012), Prince Edward Island, Canada, 2012, pp. 137-142.
+  \item \label{item:oarpdsf_journal} D. Eppstein and K. A. Wortman, \emph{Optimal Angular Resolution for Face-Symmetric Drawings}, J. Graph Algorithms and Applications (JGAA), v. 15, i. 4, pp. 551-564, 2011.
+  \item \label{item:awfn_journal} J. Augustine, D. Eppstein and K. A. Wortman, \emph{Approximate Weighted Farthest Neighbors and Minimum Dilation Stars,} Discrete Mathematics, Algorithms and Applications (DMAA), v. 2, i. 4, pp. 553-565, DOI: 10.1142/S17938309100008872010, 2010. 
+  \item M. Dickerson, D. Eppstein and K. A. Wortman, \emph{Dilation, Smoothed Distance, and Minimization Diagrams of Convex Functions,} 7th Int. Symp. Voronoi Diagrams in Science and Engineering (ISVD 2010), Quebec City, Canada, pp. 13-22.
+  \item \label{item:star_metrics} D. Eppstein and K. A. Wortman, \emph{Optimal Embedding Into Star Metrics,} Algorithms and Data Structures Symposium (WADS), Banff, Canada (best paper co-award).  Lecture Notes in Comp. Sci. 5664, 2009, pp. 290-301.
+  \item \label{item:mds_journal} D. Eppstein and K. A. Wortman, \emph{Minimum Dilation Stars,} Computational Geometry: Theory and Applications, v. 37, i. 1, pp. 27-37, 2007.
+\end{enumerate}
+
+% back to normal numbering
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+
+\heading{Teaching}
+
+\textbf{Courses Taught:}
+ CPSC 120 Introduction to Programming,
+ CPSC 131 Data Structures Concepts,
+ CPSC 223C C Programming$\bigstar$,
+ CPSC 254 Software Development with Open Source Systems,
+ CPSC 305 Coding for Artists$\bigstar$,
+ CPSC 335 Algorithm Engineering,
+ CPSC 439 Theory of Computation$\bigstar$,
+ CPSC 452 Cryptography,
+ CPSC 481 Artificial Intelligence,
+ CPSC 484 Principles of Computer Graphics,
+ CPSC 535 Advanced Algorithms$\bigstar$,
+ CPSC 597 Project
+
+ $\bigstar$ course proposer/developer
+
+\heading{Funding}
+
+\begin{enumerate}
+\item \emph{Socially Responsible Computing: Promoting Latinx Student Retention Via Community Engagement In Early CS Courses} (NSF BPC), co-PI, \$299,716.
+\item \emph{Street Scanner,} Raytheon Company, PI, 2013, \$25,000.
+\item \emph{Funding My Research: A Grant Writing Series,} 2012, \$1,000.
+\item \emph{Promoting Undergraduate Research Experiences (PURE) Grant Program,} 2011, \$1,000.
+\end{enumerate}
+
+\heading{Service}
+
+\textbf{University-Level}
+\begin{enumerate}
+\item Academic Master Plan Committee: AY 2015-2016
+\item General Education Committee: AY 2016-2017, 2015-2016
+\item General Education Task Force: AY 2019-2020, 2018-2019, 2017-2018
+\item Promoting Undergraduate Research Experiences Committee (PURE): AY 2010-2011
+\item SafeSpace Ally, CSU Fullerton Multicultural Leadership Center: 2009-present
+\item Supplemental Instruction (SI) Department Liason: AY 2016-2017, 2015-2016, 2014-2015, 2013-2014
+%\item Judge, on-campus selection for the CSU System-wide Research Competition: Spring 2012
+\end{enumerate}
+
+\textbf{College of Engineering and Computer Science}
+\begin{enumerate}
+\item Ad-Hoc Committee: AY 2017-2018
+\item Commencement Committee: AY 2012-2013, 2011-2012, 2010-2011, 2009-2010
+\item Curriculum Committee: AY 2017-2018, 2016-2017, 2015-2016
+\end{enumerate}
+
+\textbf{Department of Computer Science}
+\begin{enumerate}
+  % missing AY 2015-2016
+\item ACM Student Chapter Advisor: AY 2014-2015, 2013-2014, 2012-2011, 2011-2012
+\item Assessment Committee: AY 2022-2023 (chair), 2021-2022 (chair), 2020-2021, 2018-2019, 2017-2018
+\item Chair Election Committee Chair: AY 2011-2012
+\item Graduate Program Committee: AY 2015-2016, 2014-2015
+\item Executive Committee: AY 2012-2013, 2010-2011
+\item Personnel Committee: AY 2022-2023, 2016-2017, 2015-2016
+\item Selection (Faculty Search) Committee: AY 2022-2023, 2015-2016, 2014-2015, 2013-2014
+\item Undergraduate Program Coordinator: AY 2017-2018, 2016-2017, 2015-2016, 2014-2015
+\item Undergraduate Program Committee: AY 2022-2023, 2021-2022, 2018-2019, 2017-2018, 2016-2017, 2015-2016, 2014-2015, 2013-2014, 2012-2013, 2011-2012, 2010-2011, 2009-2010
+\end{enumerate}
+
+\heading{Selected Awards}
+
+\textbf{Faculty Advisor of Distinction}, CSU Fullerton, March 2018
+
+\textbf{Faculty Recognition: Outstanding Teaching}, CSU Fullerton, March 2014
+
+\textbf{Faculty Recognition: Scholarly \& Creative Activity}, CSU Fullerton, March 2013
+
+\textbf{Outstanding Educator of the Year (College of ECS)}, Associated Students Inc., AY 2012-2013
+
+\textbf{Faculty Recognition: Scholarly \& Creative Activity}, CSU Fullerton, April 2010
+
+\heading{Affiliations}
+
+Association of Computing Machinery (ACM) \\
+
+\end{document}
