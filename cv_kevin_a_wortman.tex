@@ -1,5 +1,5 @@
 
-% Last updated September 19, 2021
+% Last updated October 15, 2024
 
 \documentclass[11pt]{letter}
 
@@ -11,7 +11,7 @@
   fullpage,
   ifthen,
   multicol,
-  palatino,
+%  palatino,
   url
 }
 
@@ -106,6 +106,7 @@ Phone: 657-278-2968\\
 \renewcommand{\labelenumi}{C-\arabic{enumi}.}
 \textbf{Conference Proceedings (peer reviewed)}
 \begin{enumerate}
+\item \label{item:sigcse24etal} K. A. Wortman, A. Gautam, S. Hug, P. Salvador Inventado, A. M. Kazerouni, J. Lehr, K. Sood, Z. Wood, \emph{Reflecting on Practices to Integrate Socially Responsible Computing in Introductory Computer Science Courses}, ACM Technical Symposium on Computer Science Education (SIGCSE TS) 2025, \emph{accepted}.
 \item \label{item:ccwc21smith} K. A. Wortman and Nicholas Smith, \emph{CombinoChord: A Guitar Chord Generator App,} IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC 2021), Las Vegas, Nevada, 2021.
 \item \label{item:ccwc21palit} Shekhar Palit and K. A. Wortman, \emph{Perfect Tabular Hashing in Pseudolinear Time,} IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC 2021), Las Vegas, Nevada, 2021.
 \item \label{item:ccwc20} Coleman Nugent and K. A. Wortman, \emph{Crumple Trees,} IEEE 10th Annual Computing and Communication Workshop and Conference (CCWC 2020), Las Vegas, Nevada, 2020.
@@ -139,12 +140,11 @@ Phone: 657-278-2968\\
 % back to normal numbering
 \renewcommand{\labelenumi}{\arabic{enumi}.}
 
-\clearpage % the big table below will float
 \heading{Teaching}
 
 \textbf{Courses Taught --- CSU Fullerton}
 
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|}
   \hline
   \textbf{Term} &
   \textbf{120} &
@@ -157,59 +157,58 @@ Phone: 657-278-2968\\
   \textbf{452} &
   \textbf{481} &
   \textbf{484} &
+  \textbf{533} &
   \textbf{535} &
   \textbf{597} \\ \hline
 
-  %            120  131  223C 254  305  335  439  452  481  484  535  597  
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-%              &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-  Fall   2022 &\ck &    &    &    &    &      &    &    &    &    &    &    \\ \hline
-  Summer 2022 &    &    &    &    &    &\ck   &    &    &    &    &    &    \\ \hline
-  Spring 2022 &    &    &    &    &    &\ck   &    &    &    &    &    &    \\ \hline
-  Fall   2021 &    &\ck &    &    &    &    &    &    &    &    &\ck &    \\ \hline
-  Spring 2021 &    &    &    &    &    &\ck &\ck &    &    &    &    &    \\ \hline
-  Fall   2020 &    &\ck &    &    &    &    &    &    &    &    &\ck &    \\ \hline
-  Spring 2020 &\ck &    &    &    &    &    &    &    &    &\ck &    &    \\ \hline
-  %            120  131  223C 254  305  335  439  452  481  484  535  597  
-  Fall   2019 &\ck &    &    &    &    &    &    &    &    &    &\ck &    \\ \hline
-  Summer 2019 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2019 &    &    &    &    &    &\ck &    &    &    &\ck &\ck &    \\ \hline
-  Fall   2018 &\ck &    &    &    &\ck &\ck &    &    &    &    &    &    \\ \hline
-  Summer 2018 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2018 &    &    &    &    &    &\ck &    &    &    &\ck &    &    \\ \hline
-  Fall   2017 &    &    &    &    &\ck &\ck &    &    &    &    &    &    \\ \hline
-  Summer 2017 &    &    &    &    &    &    &    &\ck &    &    &    &    \\ \hline
+%              120  131  223C 254  305  335  439  452  481  484  533  535  597  
+%              &    &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
+%              &    &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
+%              &    &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
+  Fall   2024  &\ck &    &    &    &    &    &    &    &    &    &\ck &    &    \\ \hline
+  Summer 2024  &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2024  &\ck &    &    &    &    &    &    &    &    &    &    &\ck &    \\ \hline
+  Fall   2023  &\ck &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
+  Spring 2023  &\ck &    &    &    &    &    &    &    &    &    &    &\ck &    \\ \hline
+  Fall   2022  &\ck &    &    &    &    &      &    &    &    &    &    &   &    \\ \hline
+  Summer 2022  &    &    &    &    &    &\ck   &    &    &    &    &    &   &    \\ \hline
+  Spring 2022  &    &    &    &    &    &\ck   &    &    &    &    &    &   &    \\ \hline
+  Fall   2021  &    &\ck &    &    &    &    &    &    &    &    &\ck &    &    \\ \hline
+  Spring 2021  &    &    &    &    &    &\ck &\ck &    &    &    &    &    &    \\ \hline
+  Fall   2020  &    &\ck &    &    &    &    &    &    &    &    &\ck &    &    \\ \hline
+  Spring 2020  &\ck &    &    &    &    &    &    &    &    &\ck &    &    &    \\ \hline
+  Fall   2019 &\ck &    &    &    &    &    &    &    &    &    &\ck &    &    \\ \hline
+  Summer 2019 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2019 &    &    &    &    &    &\ck &    &    &    &\ck &\ck &    &    \\ \hline
+  Fall   2018 &\ck &    &    &    &\ck &\ck &    &    &    &    &    &    &    \\ \hline
+  Summer 2018 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2018 &    &    &    &    &    &\ck &    &    &    &\ck &    &    &    \\ \hline
+  Fall   2017 &    &    &    &    &\ck &\ck &    &    &    &    &    &    &    \\ \hline
+  Summer 2017 &    &    &    &    &    &    &    &\ck &    &    &    &    &    \\ \hline
   % Spring 2017 was sattabical
-  Fall   2016 &    &\ck &    &    &    &    &\ck &    &    &    &    &    \\ \hline
-  Spring 2016 &    &\ck &    &    &    &    &    &    &    &\ck &    &    \\ \hline
-  Fall   2015 &    &\ck &    &    &    &    &\ck &    &    &    &    &    \\ \hline
-  Summer 2015 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2015 &    &    &\ck &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Fall   2014 &    &    &    &    &    &\ck &\ck &    &    &    &    &    \\ \hline
-  Summer 2014 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2014 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Fall   2013 &    &\ck &    &    &    &    &    &    &\ck &    &    &    \\ \hline
-  Summer 2013 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2013 &    &\ck &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Fall   2012 &\ck &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-  Summer 2012 &    &    &    &    &    &\ck &    &\ck &    &    &    &    \\ \hline
-  Spring 2012 &\ck &    &    &    &    &\ck &\ck &    &    &    &    &    \\ \hline
-  Fall   2011 &\ck &    &    &    &    &    &    &    &    &    &    &\ck \\ \hline
-  Summer 2011 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2011 &\ck &    &    &\ck &    &\ck &    &    &    &    &    &    \\ \hline
-  Fall   2010 &\ck &    &    &    &    &    &    &    &    &    &    &    \\ \hline
-  Summer 2010 &    &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  Spring 2010 &\ck &    &    &\ck &    &\ck &    &    &    &    &    &    \\ \hline
-  %            120  131  223C 254  305  335  439  452  481  484  535  597  
-  Fall   2009 &\ck &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
-  %            120  131  223C 254  305  335  439  452  481  484  535  597  
+  Fall   2016 &    &\ck &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
+  Spring 2016 &    &\ck &    &    &    &    &    &    &    &\ck &    &    &    \\ \hline
+  Fall   2015 &    &\ck &    &    &    &    &\ck &    &    &    &    &    &    \\ \hline
+  Summer 2015 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2015 &    &    &\ck &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Fall   2014 &    &    &    &    &    &\ck &\ck &    &    &    &    &    &    \\ \hline
+  Summer 2014 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2014 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Fall   2013 &    &\ck &    &    &    &    &    &    &\ck &    &    &    &    \\ \hline
+  Summer 2013 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2013 &    &\ck &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Fall   2012 &\ck &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
+  Summer 2012 &    &    &    &    &    &\ck &    &\ck &    &    &    &    &    \\ \hline
+  Spring 2012 &\ck &    &    &    &    &\ck &\ck &    &    &    &    &    &    \\ \hline
+  Fall   2011 &\ck &    &    &    &    &    &    &    &    &    &    &\ck &    \\ \hline
+  Summer 2011 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2011 &\ck &    &    &\ck &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Fall   2010 &\ck &    &    &    &    &    &    &    &    &    &    &    &    \\ \hline
+  Summer 2010 &    &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Spring 2010 &\ck &    &    &\ck &    &\ck &    &    &    &    &    &    &    \\ \hline
+  Fall   2009 &\ck &    &    &    &    &\ck &    &    &    &    &    &    &    \\ \hline
 \end{tabular}
+
 \comment{
 \begin{enumerate}
 \item CPSC 120 Introduction to Programming: Fall 2019, Fall 2018, Fall 2012,  Spring 2012, Fall 2011, Spring 2011, Fall 2010, Spring 2010, Fall 2009
@@ -235,8 +234,11 @@ Phone: 657-278-2968\\
 \end{itemize}
 }
 
+\newpage
+
 \textbf{Courses Developed}
 \begin{enumerate}
+\item CPSC 533 Applied Algorithms, first offered Fall 2024
 \item CPSC 535 Advanced Algorithms, first offered Spring 2019
 \item CPSC 305 Coding For Artists, first offered Fall 2017
 \item CPSC 223C C Programming, first offered Spring 2015
@@ -323,6 +325,7 @@ Phone: 657-278-2968\\
 
 \textbf{Unfunded Proposals}
 \begin{enumerate}
+\item \emph{BPC-AE: Socially Responsible Computing: Promoting Latinx Student Retention Via Community Engagement in Early CS Courses}, 2024.
 \item \emph{Enhanced Programming Curriculum for the Retention of Computer Science and Computer Engineering Students,} Association of American Colleges \& Universities, co-PI, 2014.
 \item \emph{Ensuring Student Success in Engineering and Computer Science (ESSECS),} National Science Foundation, co-PI, 2012.
 \item \emph{Proposal for Development of a CCOS Archive,} Central California Ozone Study, PI, 2011.
@@ -355,16 +358,17 @@ Phone: 657-278-2968\\
 \item ACM Student Chapter Advisor: AY 2014-2015, 2013-2014, 2012-2011, 2011-2012
 \item Assessment Committee: AY 2022-2023 (chair), 2021-2022 (chair), 2020-2021, 2018-2019, 2017-2018
 \item Chair Election Committee Chair: AY 2011-2012
-\item Graduate Program Committee: AY 2015-2016, 2014-2015
+\item Graduate Program Committee: AY 2022-2023 (non-voting), 2015-2016, 2014-2015
 \item Executive Committee: AY 2012-2013, 2010-2011
-\item Personnel Committee: AY 2022-2023, 2016-2017, 2015-2016
-\item Selection (Faculty Search) Committee: AY 2022-2023, 2015-2016, 2014-2015, 2013-2014
+\item Personnel Committee: AY 2023-2024, 2022-2023, 2016-2017, 2015-2016
+\item Selection (Faculty Search) Committee: AY 2024-2025, 2023-2024 (chair), 2022-2023, 2015-2016, 2014-2015, 2013-2014
 \item Undergraduate Program Coordinator: AY 2017-2018, 2016-2017, 2015-2016, 2014-2015
-\item Undergraduate Program Committee: AY 2022-2023, 2021-2022, 2018-2019, 2017-2018, 2016-2017, 2015-2016, 2014-2015, 2013-2014, 2012-2013, 2011-2012, 2010-2011, 2009-2010
+\item Undergraduate Program Committee: AY 2024-2025, 2023-2024, 2022-2023, 2021-2022, 2018-2019, 2017-2018, 2016-2017, 2015-2016, 2014-2015, 2013-2014, 2012-2013, 2011-2012, 2010-2011, 2009-2010
 \end{enumerate}
 
 \textbf{Professional Development}
 \begin{enumerate}
+  \item Equitable Pedagogy Module 2B, CSUF Faculty Development Center, 2024
   \item Blended/Flipped Design Certificate Program, CSUF Online Education and Training, Spring 2022
   \item Equitable Pedagogy Module, CSUF Faculty Development Center, 2021-2022
   \item POGIL Activity Writing Workshop, The POGIL Project, 2021
@@ -390,6 +394,8 @@ Phone: 657-278-2968\\
 \item The Pollak Library Blog, \href{http://libphp2006.fullerton.edu/blogs/news/2010/12/02/dr-wortmans-top-resources-for-trends-in-computer-science/}{Dr. Wortman's top resources for trends in Computer Science,} invited guest post, December 2, 2010
 \end{enumerate}
 
+\textbf{Technical Committee}, CCWC 2021
+
 \textbf{Reviewer}, CCWC 2022, CCWC 2021, CCWC 2020, SIGCSE 2020, 2013 ACM-ICPC North America Qualifier Contest, \emph{Open Data Structures} (textbook), IEEE Transactions on Education
 
 \textbf{External Reviewer}, Scheme R7RS Working Group 2, J. Algorithms, ACM TALG, ISAAC 2008
@@ -408,6 +414,8 @@ Phone: 657-278-2968\\
 \textbf{Associated Graduate Students, UC Irvine},  Council Representative, School of Information and Computer Science, AY 2004-2005 and AY 2006-2007 \omit{Unix Systems Administrator, January 2004 to December 2004}
 
 \heading{Awards}
+
+\textbf{ECS Commencement Faculty Marshal}, 2024
 
 \textbf{Best Software}, CSUF ECS Student Projects Showcase and Awards, for
   poster P-~\ref{item:hills}, sponsored by Raytheon, 2019
